@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CanvasBT Privacy Policy</title>
+  <meta name="description" content="CanvasBT Privacy Policy — privacy-by-design, minimal data collection, and UK GDPR compliance." />
+  <style>
+    :root{
+      --bg:#0f1116;
+      --card:#151823;
+      --text:#e7e9ee;
+      --muted:#b8beca;
+      --link:#6aa9ff;
+      --accent:#35d39b;
+      --danger:#ff6b6b;
+      --border:#242a38;
+      --tableHead:#1b2030;
+      --code:#0c0f14;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:14px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(120deg, #0e121a 0%, #0a0d13 100%);
+      color:var(--text);
+      font:16px/1.6 var(--sans);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:32px 20px 80px;
+    }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(10,13,19,.7);
+      backdrop-filter: blur(8px);
+      border-bottom:1px solid var(--border);
+    }
+    .brand{
+      max-width:1100px; margin:0 auto; padding:14px 20px;
+      display:flex; align-items:center; gap:16px;
+    }
+    .logo{
+      width:36px; height:36px; border-radius:8px;
+      display:grid; place-items:center; font-weight:700;
+      background:linear-gradient(135deg, #2e7cfb, #35d39b);
+      box-shadow:var(--shadow); color:#0b1020;
+    }
+    .title{font-size:18px; font-weight:700}
+    .meta{margin-left:auto; font-size:14px; color:var(--muted)}
+    .hero{
+      margin:26px 0 30px;
+      padding:26px;
+      background:linear-gradient(180deg, rgba(53,211,155,.08), rgba(46,124,251,.06));
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero h1{margin:0 0 8px; font-size:28px}
+    .hero p{margin:2px 0; color:var(--muted)}
+    .grid{
+      display:grid; grid-template-columns: 280px 1fr; gap:22px;
+      align-items:start;
+    }
+    nav{
+      position:sticky; top:68px;
+      background:var(--card); border:1px solid var(--border);
+      border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:16px;
+    }
+    nav h3{margin:0 0 10px; font-size:16px}
+    nav ul{list-style:none; padding:0; margin:0}
+    nav li{margin:4px 0}
+    nav a{
+      display:block; padding:8px 10px;
+      border-radius:10px; color:var(--muted); text-decoration:none;
+      transition:all .15s ease;
+    }
+    nav a:hover{background:#1a1f2b; color:var(--text)}
+    section{
+      margin-bottom:28px; padding:24px;
+      background:var(--card); border:1px solid var(--border);
+      border-radius:var(--radius); box-shadow:var(--shadow);
+    }
+    section h2{
+      margin:0 0 12px; font-size:22px; border-bottom:1px solid var(--border);
+      padding-bottom:10px;
+    }
+    h3{margin:18px 0 8px; font-size:18px}
+    p{margin:10px 0}
+    .list{margin:10px 0 14px; padding-left:18px}
+    .list li{margin:6px 0}
+    .note{
+      background:#121620; border:1px dashed #2b3242;
+      padding:12px 14px; border-radius:10px; color:var(--muted);
+    }
+    a{color:var(--link)}
+    a:hover{text-decoration:underline}
+    table{
+      width:100%; border-collapse:collapse; margin:12px 0 6px; font-size:15px;
+      border:1px solid var(--border); overflow:hidden; border-radius:12px;
+    }
+    thead tr{background:var(--tableHead)}
+    th, td{padding:12px 14px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top}
+    tr:last-child td{border-bottom:none}
+    code, .kbd{
+      font-family:var(--mono); background:var(--code); color:#cfe4ff;
+      padding:2px 6px; border-radius:8px; border:1px solid #1a2030;
+    }
+    .badges{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+    .badge{
+      font-size:12px; padding:6px 10px; border-radius:999px;
+      border:1px solid var(--border); background:#121625; color:var(--muted);
+    }
+    .danger{color:var(--danger)}
+    .footer{
+      margin-top:28px; padding:22px;
+      color:var(--muted); font-size:14px; text-align:center;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns: 1fr}
+      nav{position:relative; top:auto}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">CBT</div>
+      <div class="title">CanvasBT Privacy Policy</div>
+      <div class="meta">Last Updated: December 2025 • Effective: 04 December 2025</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="hero">
+      <h1>Privacy by design, simple and transparent</h1>
+      <p>CanvasBT is built to work locally, with minimal data collection and clear control for you.</p>
+      <div class="badges">
+        <span class="badge">UK GDPR</span>
+        <span class="badge">DPA 2018</span>
+        <span class="badge">No tracking</span>
+        <span class="badge">Local-only processing</span>
+        <span class="badge">Encrypted Bluetooth</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <nav aria-label="Table of contents">
+        <h3>Contents</h3>
+        <ul>
+          <li><a href="#introduction">1. Introduction</a></li>
+          <li><a href="#information-we-collect">2. Information we collect</a></li>
+          <li><a href="#lawful-basis">3. Lawful basis for processing</a></li>
+          <li><a href="#third-party-services">4. Third-party services</a></li>
+          <li><a href="#storage-retention">5. Data storage and retention</a></li>
+          <li><a href="#security">6. Data security</a></li>
+          <li><a href="#your-rights">7. Your data protection rights</a></li>
+          <li><a href="#children">8. Children’s privacy</a></li>
+          <li><a href="#transfers">9. International data transfers</a></li>
+          <li><a href="#cookies">10. Cookies and tracking</a></li>
+          <li><a href="#changes">11. Changes to this policy</a></li>
+          <li><a href="#contact">12. Contact us</a></li>
+          <li><a href="#complaint">13. Your right to complain</a></li>
+          <li><a href="#dpo">14. Data Protection Officer</a></li>
+          <li><a href="#glossary">15. Glossary</a></li>
+          <li><a href="#supplementary">16. Supplementary information</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="introduction" aria-labelledby="h-intro">
+          <h2 id="h-intro">1. Introduction</h2>
+          <p>CanvasBT (“we,” “us,” “our,” or “the App”) is a product of Inventors Tech Ltd and is committed to protecting your privacy and ensuring you have a positive experience with our application. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the CanvasBT App) and associated services.</p>
+          <p>This Privacy Policy applies to all users of CanvasBT regardless of location, though it is specifically designed to comply with UK data protection law, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+          <p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our App. Your continued use of CanvasBT signifies your acceptance of this Privacy Policy.</p>
+        </section>
+
+        <section id="information-we-collect" aria-labelledby="h-collect">
+          <h2 id="h-collect">2. Information we collect</h2>
+
+          <h3>2.1 Information you do not provide (minimal data collection)</h3>
+          <p>CanvasBT is designed with privacy at its core. We operate on a principle of data minimisation and do not collect personal data unless absolutely necessary for the App to function.</p>
+          <ul class="list">
+            <li><strong>Not collected:</strong> Personal identification information (name, email address, phone number)</li>
+            <li><strong>Not collected:</strong> Location data</li>
+            <li><strong>Not collected:</strong> Device identifiers or user tracking data</li>
+            <li><strong>Not collected:</strong> Browsing history or usage analytics</li>
+            <li><strong>Not collected:</strong> Biometric data</li>
+          </ul>
+
+          <h3>2.2 Permissions required</h3>
+          <p>To provide core functionality, CanvasBT requests the following device permissions:</p>
+
+          <h3>a) Bluetooth permission</h3>
+          <p><strong>Purpose:</strong> To enable secure, direct communication with your CanvasBT e-paper display device</p>
+          <p><strong>Data processed:</strong> Connection metadata only (device pairing information)</p>
+          <p><strong>Storage:</strong> Stored locally on your device only; not transmitted anywhere else</p>
+          <p><strong>User control:</strong> You can revoke this permission at any time via your device settings</p>
+
+          <h3>b) Storage/Gallery access permission (if used)</h3>
+          <p><strong>Purpose:</strong> To allow you to select images from your device’s photo gallery</p>
+          <p><strong>Data processed:</strong> Only images you explicitly select; no metadata is collected</p>
+          <p><strong>Storage:</strong> Your photos remain on your device; processed images are cached locally</p>
+          <p><strong>User control:</strong> You have full control over which images you share with the App</p>
+
+          <h3>c) Camera permission (if image capture feature used)</h3>
+          <p><strong>Purpose:</strong> To capture photos directly within the App</p>
+          <p><strong>Data processed:</strong> Only photos you capture; no camera metadata is retained</p>
+          <p><strong>Storage:</strong> Photos stored locally on your device</p>
+          <p><strong>User control:</strong> You control when the camera is accessed</p>
+
+          <h3>2.3 Data processing within the app</h3>
+
+          <h3>Local processing</h3>
+          <ul class="list">
+            <li><strong>Offline:</strong> All image processing occurs locally on your device.</li>
+            <li><strong>No exfiltration:</strong> Your photos never leave your device through CanvasBT systems.</li>
+            <li><strong>Transmission:</strong> Processed entirely offline unless you explicitly initiate upload to your e-paper display.</li>
+            <li><strong>No servers:</strong> Images are not transmitted to our servers or any third party.</li>
+            <li><strong>Deletion:</strong> Images are deleted from cache when you clear them or uninstall the App.</li>
+          </ul>
+
+          <h3>API keys</h3>
+          <p>If you choose to use AI image generation via OpenAI’s DALL-E, you must provide your own OpenAI API key. We do not store or manage your API credentials. Your key is stored locally on your device only.</p>
+        </section>
+
+        <section id="lawful-basis" aria-labelledby="h-lawful">
+          <h2 id="h-lawful">3. Lawful basis for processing</h2>
+          <h3>3.1 Legitimate interest</h3>
+          <ul class="list">
+            <li><strong>Functionality:</strong> Providing core App functionality (Bluetooth communication)</li>
+            <li><strong>User-directed:</strong> Processing your locally-stored images as you direct</li>
+            <li><strong>Direct link:</strong> Enabling device-to-display communication without intermediary servers</li>
+          </ul>
+
+          <h3>3.2 Consent</h3>
+          <ul class="list">
+            <li><strong>Optional features:</strong> Third-party services (e.g., image search APIs)</li>
+            <li><strong>Local storage:</strong> Retaining processed images on your device</li>
+            <li><strong>Withdrawal:</strong> You may withdraw consent at any time via App settings or device permissions</li>
+          </ul>
+
+          <h3>3.3 Contractual necessity</h3>
+          <p>Facilitating the Bluetooth connection between App and display device (part of the service you use).</p>
+        </section>
+
+        <section id="third-party-services" aria-labelledby="h-third">
+          <h2 id="h-third">4. Third-party services</h2>
+
+          <h3>4.1 Image search APIs</h3>
+          <h3>Pexels and Pixabay</h3>
+          <ul class="list">
+            <li><strong>Purpose:</strong> Optional free stock image search</li>
+            <li><strong>Data shared:</strong> Only search queries you enter; no personal data is transferred</li>
+            <li><strong>Separate privacy:</strong> They have their own privacy policies; we are not responsible for their practices</li>
+            <li><strong>No collection:</strong> We do not collect, store, or track your search history</li>
+            <li><strong>Control:</strong> Image search is optional; you can use only your own photos</li>
+          </ul>
+
+          <h3>OpenAI DALL-E API (optional AI generation)</h3>
+          <ul class="list">
+            <li><strong>API key:</strong> You supply your own OpenAI API key; we do not store it</li>
+            <li><strong>Data shared:</strong> Only the prompt you provide; no personal information is sent</li>
+            <li><strong>Processing:</strong> Requests go directly to OpenAI’s servers; we do not act as intermediary</li>
+            <li><strong>Terms:</strong> Subject to OpenAI’s own terms and privacy policy</li>
+            <li><strong>Your responsibility:</strong> Comply with OpenAI’s usage terms and any associated costs</li>
+            <li><strong>No collection:</strong> We do not collect or store records of AI generation requests</li>
+          </ul>
+
+          <h3>4.2 No data sharing</h3>
+          <ul class="list">
+            <li><strong>No selling:</strong> We do not sell, rent, or lease personal data to third parties</li>
+            <li><strong>No combining:</strong> We do not combine third-party data with personal information</li>
+            <li><strong>Independence:</strong> Third-party services operate independently; we only send what you explicitly choose</li>
+          </ul>
+        </section>
+
+        <section id="storage-retention" aria-labelledby="h-store">
+          <h2 id="h-store">5. Data storage and retention</h2>
+
+          <h3>5.1 Local device storage</h3>
+          <ul class="list">
+            <li><strong>Processed images:</strong> Cached locally for quick access</li>
+            <li><strong>App settings:</strong> Preferences stored locally (e.g., brightness, refresh rate)</li>
+            <li><strong>Bluetooth:</strong> Pairing information stored locally</li>
+          </ul>
+
+          <h3>5.2 Data deletion</h3>
+          <ul class="list">
+            <li><strong>In-app:</strong> Use “Clear Cache” or “Reset Data” in settings</li>
+            <li><strong>Uninstall:</strong> Removes all locally-stored data</li>
+            <li><strong>Permissions:</strong> Manage via device Settings</li>
+          </ul>
+          <p class="note"><strong>Important:</strong> Once deleted, data cannot be recovered. Deletion is permanent and irreversible.</p>
+
+          <h3>5.3 Data retention policy</h3>
+          <ul class="list">
+            <li><strong>Local image cache:</strong> Retained until you clear it or uninstall</li>
+            <li><strong>Bluetooth pairing:</strong> Retained; deleted if you unpair</li>
+            <li><strong>App settings:</strong> Retained unless cleared or device reset</li>
+            <li><strong>API keys:</strong> Stored locally; not backed up to cloud</li>
+          </ul>
+        </section>
+
+        <section id="security" aria-labelledby="h-sec">
+          <h2 id="h-sec">6. Data security</h2>
+
+          <h3>6.1 Security measures</h3>
+          <h3>Local processing</h3>
+          <ul class="list">
+            <li><strong>On-device:</strong> All image processing is on your device</li>
+            <li><strong>No servers:</strong> We do not store, process, or access your images</li>
+          </ul>
+
+          <h3>Bluetooth security</h3>
+          <ul class="list">
+            <li><strong>Encrypted:</strong> Direct, encrypted connection</li>
+            <li><strong>No intermediaries:</strong> Point-to-point communication</li>
+            <li><strong>User initiation:</strong> Pairing requires explicit action; you control connections</li>
+          </ul>
+
+          <h3>Cryptographic protection</h3>
+          <ul class="list">
+            <li><strong>Device encryption:</strong> Benefits from built-in encryption (if enabled)</li>
+            <li><strong>HTTPS:</strong> API communication uses industry-standard HTTPS</li>
+            <li><strong>Secrets:</strong> API keys stored in secure storage when available</li>
+          </ul>
+
+          <h3>Access controls</h3>
+          <ul class="list">
+            <li><strong>Local-only:</strong> Only your device can access stored data</li>
+            <li><strong>Third-party scope:</strong> Services only access data you explicitly send</li>
+            <li><strong>No cloud:</strong> No cloud backup of personal data</li>
+          </ul>
+
+          <h3>6.2 Security limitations</h3>
+          <p>While we implement reasonable security measures, no system is completely secure. We cannot guarantee absolute security. You are responsible for:</p>
+          <ul class="list">
+            <li><strong>Updates:</strong> Keeping your device OS updated</li>
+            <li><strong>Lock:</strong> Using a PIN or biometric lock</li>
+            <li><strong>Permissions:</strong> Revoking App permissions if you stop using features</li>
+            <li><strong>API usage:</strong> Monitoring your OpenAI usage if you use the AI feature</li>
+          </ul>
+        </section>
+
+        <section id="your-rights" aria-labelledby="h-rights">
+          <h2 id="h-rights">7. Your data protection rights</h2>
+          <h3>7.1 Right of access (Article 15)</h3>
+          <p>You can request what personal data we hold about you. As we collect minimal data and store it locally on your device, you have direct access to all data we process through your device settings.</p>
+          <h3>7.2 Right of erasure (Article 17)</h3>
+          <p>You can request deletion of your data. You can exercise this right immediately by clearing the App cache, uninstalling the App, or resetting your device.</p>
+          <h3>7.3 Right to rectification (Article 16)</h3>
+          <p>You can correct inaccurate data. As we store minimal personal data, this right is limited in scope.</p>
+          <h3>7.4 Right to restrict processing (Article 18)</h3>
+          <p>You can restrict processing by revoking permissions, disabling features, or not providing optional information.</p>
+          <h3>7.5 Right to data portability (Article 20)</h3>
+          <p>You can request your data in a portable format. Your image cache and app settings can be accessed directly on your device.</p>
+          <h3>7.6 Right to object (Article 21)</h3>
+          <p>You can object to processing by uninstalling the App or disabling permissions.</p>
+          <h3>7.7 Right not to be subject to automated decision-making (Article 22)</h3>
+          <p>CanvasBT does not use automated decision-making or profiling.</p>
+        </section>
+
+        <section id="children" aria-labelledby="h-children">
+          <h2 id="h-children">8. Children’s privacy</h2>
+          <p>CanvasBT welcomes users of all ages. The app collects no personal data from any users and processes all images locally on your device with zero data collection or transmission to our servers. Children can safely display their artwork on e-paper displays.</p>
+          <p class="note danger"><strong>Zero privacy risk:</strong> Parents can use CanvasBT with confidence knowing no personal information is collected or stored.</p>
+        </section>
+
+        <section id="transfers" aria-labelledby="h-transfers">
+          <h2 id="h-transfers">9. International data transfers</h2>
+          <h3>9.1 Third-party service locations</h3>
+          <p>When you use optional features (Pexels, Pixabay, OpenAI), your data may be transferred to the United States or other countries where these services operate because you explicitly request the service and the service is located outside the UK.</p>
+          <h3>9.2 Data protection adequacy</h3>
+          <ul class="list">
+            <li><strong>OpenAI (USA):</strong> Relies on Standard Contractual Clauses (SCCs) and additional safeguards for UK/EU data</li>
+            <li><strong>Pexels &amp; Pixabay:</strong> Have their own data transfer mechanisms; refer to their privacy policies</li>
+          </ul>
+          <h3>9.3 Your control</h3>
+          <p>You control whether data is transferred by choosing whether to use these optional features.</p>
+        </section>
+
+        <section id="cookies" aria-labelledby="h-cookies">
+          <h2 id="h-cookies">10. Cookies and tracking technologies</h2>
+          <h3>10.1 App-based tracking</h3>
+          <p>CanvasBT does not use cookies, tracking pixels, or other tracking technologies.</p>
+          <h3>10.2 PECR compliance</h3>
+          <p>As we do not deploy tracking technologies, the Privacy and Electronic Communications Regulations (PECR) do not materially apply to the App itself.</p>
+          <h3>10.3 Third-party service tracking</h3>
+          <p>When you use Pexels, Pixabay, or OpenAI through the App, those services may deploy tracking technologies according to their own privacy policies. We are not responsible for their tracking practices.</p>
+        </section>
+
+        <section id="changes" aria-labelledby="h-changes">
+          <h2 id="h-changes">11. Changes to this Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will update the “Last Updated” date, notify you through the App or via other reasonable means, and request your consent if required by law. Your continued use of CanvasBT following publication of changes constitutes acceptance of the revised Privacy Policy.</p>
+        </section>
+
+        <section id="contact" aria-labelledby="h-contact">
+          <h2 id="h-contact">12. Contact us</h2>
+          <p><strong>CanvasBT Privacy Support</strong></p>
+          <p><strong>Website:</strong> <a href="https://inventorstech.io/index.php/contact-us/" target="_blank" rel="noopener">https://inventorstech.io/index.php/contact-us/</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@inventorstech.io">info@inventorstech.io</a></p>
+          <p><strong>Response time:</strong> We aim to respond to data protection inquiries within 30 days.</p>
+        </section>
+
+        <section id="complaint" aria-labelledby="h-complaint">
+          <h2 id="h-complaint">13. Your right to lodge a complaint</h2>
+          <p>If you believe CanvasBT has violated your data protection rights, you have the right to lodge a complaint with the Information Commissioner’s Office (ICO), the UK’s independent authority for data protection:</p>
+          <ul class="list">
+            <li><strong>Address:</strong> Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF, United Kingdom</li>
+            <li><strong>Website:</strong> <a href="https://ico.org.uk/" target="_blank" rel="noopener">https://ico.org.uk/</a></li>
+            <li><strong>Phone:</strong> 0303 123 1113 (local rate)</li>
+            <li><strong>Email:</strong> <a href="mailto:casework@ico.org.uk">casework@ico.org.uk</a></li>
+          </ul>
+          <p>You also have the right to lodge a complaint with a supervisory authority in any EU/EEA member state where you reside or work.</p>
+        </section>
+
+        <section id="dpo" aria-labelledby="h-dpo">
+          <h2 id="h-dpo">14. Data Protection Officer</h2>
+          <p>If you have enquiries about our data protection practices or wish to make a formal request under your data protection rights, you may direct these to:</p>
+          <p><strong>Email:</strong> <a href="mailto:info@inventorstech.io">info@inventorstech.io</a></p>
+        </section>
+
+        <section id="glossary" aria-labelledby="h-glossary">
+          <h2 id="h-glossary">15. Glossary of terms</h2>
+          <table aria-label="Glossary of terms">
+            <thead>
+              <tr>
+                <th>Term</th>
+                <th>Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Personal Data</td>
+                <td>Any information relating to an identified or identifiable natural person</td>
+              </tr>
+              <tr>
+                <td>Processing</td>
+                <td>Any operation on personal data (collection, storage, use, transmission, deletion)</td>
+              </tr>
+              <tr>
+                <td>Data Controller</td>
+                <td>The entity that determines the purposes and means of processing personal data (Inventors Tech Ltd is the data controller)</td>
+              </tr>
+              <tr>
+                <td>Data Subject</td>
+                <td>The individual to whom personal data relates (you, the user)</td>
+              </tr>
+              <tr>
+                <td>UK GDPR</td>
+                <td>The General Data Protection Regulation as retained in UK law after Brexit</td>
+              </tr>
+              <tr>
+                <td>DPA 2018</td>
+                <td>The Data Protection Act 2018 (UK national data protection legislation)</td>
+              </tr>
+              <tr>
+                <td>Lawful Basis</td>
+                <td>The legal justification for processing personal data under Article 6 of the UK GDPR</td>
+              </tr>
+              <tr>
+                <td>Special Category Data</td>
+                <td>Sensitive personal data including racial/ethnic origin, religious beliefs, health data, biometric data</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="supplementary" aria-labelledby="h-supp">
+          <h2 id="h-supp">16. Supplementary information</h2>
+
+          <h3>16.1 What we don’t do</h3>
+          <ul class="list">
+            <li><span class="danger">❌</span> We do not sell or share user data</li>
+            <li><span class="danger">❌</span> We do not build user profiles or use behavioural analytics</li>
+            <li><span class="danger">❌</span> We do not embed third-party tracking or analytics SDKs</li>
+            <li><span class="danger">❌</span> We do not access your contacts, calendar, or other private device data</li>
+            <li><span class="danger">❌</span> We do not maintain servers collecting user information</li>
+            <li><span class="danger">❌</span> We do not conduct automated profiling or decision-making</li>
+            <li><span class="danger">❌</span> We do not use your data for marketing purposes</li>
+          </ul>
+
+          <h3>16.2 Data Protection Impact Assessment (DPIA)</h3>
+          <p>Given the minimal data collection, limited processing, and strong privacy-by-design approach of CanvasBT, a formal DPIA is not required. However, we remain committed to assessing privacy risks during product development.</p>
+
+          <h3>16.3 Data retention summary table</h3>
+          <table aria-label="Data retention summary">
+            <thead>
+              <tr>
+                <th>Data type</th>
+                <th>Retention period</th>
+                <th>Storage location</th>
+                <th>Deletion method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Processed Images</td>
+                <td>Until cleared by user</td>
+                <td>Device cache</td>
+                <td>App settings or uninstall</td>
+              </tr>
+              <tr>
+                <td>App Settings</td>
+                <td>Until cleared by user</td>
+                <td>Local device storage</td>
+                <td>App settings or device reset</td>
+              </tr>
+              <tr>
+                <td>Bluetooth Pairing Data</td>
+                <td>Until unpaired</td>
+                <td>Local device storage</td>
+                <td>Unpair device or reset App</td>
+              </tr>
+              <tr>
+                <td>Search Queries</td>
+                <td>Not retained</td>
+                <td>Not stored</td>
+                <td>N/A (real-time only)</td>
+              </tr>
+              <tr>
+                <td>API Keys</td>
+                <td>Until cleared by user</td>
+                <td>Local device storage (secure storage if available)</td>
+                <td>App settings or device reset</td>
+              </tr>
+              <tr>
+                <td>Third-Party Data</td>
+                <td>Per third-party policy</td>
+                <td>Third-party servers</td>
+                <td>Contact third-party service</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="footer">
+            Thank you for using CanvasBT. We believe privacy is not a feature — it’s a fundamental right.
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

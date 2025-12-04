@@ -108,7 +108,7 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 If you have any questions about this Privacy Policy, please contact us:
 
 - By email: support@canvasbt.com
-- By visiting this page on our website: www.canvasbt.com/contact
+- By visiting this page on our website: https://www.canvasbt.com/contact
 
 ## Compliance
 
